@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Video Player</title>
+</head>
+<body>
+    <video id="videoPlayer" width="800" height="500" controls autoplay>
+        <source id="videoSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+        function updateVideo(path) {
+            document.getElementById('videoSource').src = path;
+            document.getElementById('videoPlayer').load();
+        }
+    </script>
+</body>
+</html>
